@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Fair Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+    />
+  </head>
+  <body>
+    <h2>Looking for a job???</h2>
+    <p>Unlock Your Next Career Move: Explore Exciting Job Opportunities Now!</p>
+
+    <form>
+      <label for="fullName">Full Name<span class="required">*</span></label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your Full Name"
+        required
+      />
+
+      <label for="university">University<span class="required">*</span></label>
+      <select id="university" name="university" required>
+        <option value="" disabled selected>Select University</option>
+        <option value="university1">KTU</option>
+        <option value="university2">
+          Indian Institute of Technology (IIT)
+        </option>
+        <option value="university3">
+          Indian Institute of Management (IIM)
+        </option>
+      </select>
+
+      <label for="degree">Present Degree<span class="required">*</span></label>
+      <select id="degree" name="degree" required>
+        <option value="" disabled selected>Select Degree</option>
+        <option value="degree1">B.Tech</option>
+        <option value="degree2">M.Tech</option>
+        <option value="degree3">M.Sc</option>
+        <option value="degree4">PGPX</option>
+        <option value="degree5">PGP</option>
+        <option value="degree6">MBA</option>
+      </select>
+
+      <!-- Year of Completion Dropdown -->
+      <label for="completionYear"
+        >Year of Completion<span class="required">*</span></label
+      >
+      <select id="completionYear" name="completionYear" required>
+        <option value="" disabled selected>Select Year</option>
+        <option value="2022">2023</option>
+        <option value="2023">2022</option>
+        <option value="2023">2021</option>
+      </select>
+
+      <!-- Work Location Checkboxes -->
+      <div class="checkbox-group">
+        <label>Preferred Work Locations:</label>
+        <div class="options">
+          <div class="kerala">
+            Kerala
+            </div>
+            <div class="keralacheck">
+        <input
+          class="hi"
+          type="checkbox"
+          name="workLocation"
+          value="location1"
+          id="location1"
+        />
+          </div>
+        </div>
+        <div class="options">
+          <div class="kerala">
+            Tamil Nadu
+            </div>
+            <div class="keralacheck">
+        <input
+          class="hi"
+          type="checkbox"
+          name="workLocation"
+          value="location1"
+          id="location1"
+        />
+          </div>
+        </div>
+        <div class="options">
+          <div class="kerala">
+            Karnataka
+            </div>
+            <div class="keralacheck">
+        <input
+          class="hi"
+          type="checkbox"
+          name="workLocation"
+          value="location1"
+          id="location1"
+        />
+          </div>
+        </div>
+        <div class="options">
+          <div class="kerala">
+            Aborad
+            </div>
+            <div class="keralacheck">
+        <input
+          class="hi"
+          type="checkbox"
+          name="workLocation"
+          value="location1"
+          id="location1"
+        />
+          </div>
+        </div>
+        <div class="options">
+          <div class="kerala">
+            Others
+            </div>
+            <div class="keralacheck">
+        <input
+          class="hi"
+          type="checkbox"
+          name="workLocation"
+          value="location1"
+          id="location1"
+        />
+          </div>
+        </div>
+        <!-- <label for="location1">Kerala</label> -->
+        
+        <!-- <label for="othersCheckbox">Others</label> -->
+
+        <input
+          type="text"
+          id="otherLocation"
+          name="otherLocation"
+          placeholder="Specify other location"
+        />
+        </div>
+      </div>
+
+      <!-- Email Confirmation -->
+      <label for="email">Email<span class="required">*</span></label>
+      <input type="email" id="email" name="email" required />
+      <label for="confirmEmail"
+        >Confirm Email:<span class="required">*</span></label
+      >
+      <input type="email" id="confirmEmail" name="confirmEmail" required />
+
+      <!-- Newsletter Signup Radio Buttons -->
+      <div class="radio-group">
+        <label
+          >Would you like to sign up for our newsletter?<span class="required"
+            >*</span
+          ></label
+        >
+
+        <div class="options">
+          <div class="kerala">
+           <label
+          >
+          Yes</label
+        >
+            </div>
+            <div class="keralacheck">
+        <input type="radio" name="newsletter" value="yes" required />
+          </div>
+        </div>
+         <div class="options">
+          <div class="kerala">
+           <label
+          >
+          No</label
+        >
+            </div>
+            <div class="keralacheck">
+        <input type="radio" name="newsletter" value="no" required />
+          </div>
+        </div>
+       
+      </div>
+
+      <!-- Submit and Reset Buttons -->
+      <input type="submit" value="Submit" class="submit-button" />
+      <input type="reset" value="Reset" class="reset-button" />
+    </form>
+  </body>
+</html>

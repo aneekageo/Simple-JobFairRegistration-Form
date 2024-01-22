@@ -1,0 +1,59 @@
+body {
+  font-family: "Courier Prime", monospace;
+  margin: 20px;
+  background-color: sienna;
+  color: #000;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #ffc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+span.required {
+  color: red;
+  margin-left: 5px; /* Adjust as needed for spacing */
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.submit-button,
+.reset-button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover,
+.reset-button:hover {
+  background-color: #45a049;
+}
+
+
+.options {
+  display: flex;
+}
+.kerala {
+  flex: 1;
+}
+.keralacheck {
+  flex: 1;
+}
